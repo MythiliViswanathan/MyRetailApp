@@ -15,6 +15,10 @@ import com.myRetail.retail.api.resource.ProductMetaDataResource;
 import com.myRetail.retail.api.response.ProductMetaDataResponse;
 import com.myRetail.retail.service.biz.api.ProductsMetaDataManager;
 
+/**
+ * @author mythili
+ *
+ */
 @RestController
 @RequestMapping("/myRetail/productMetaData")
 @ConditionalOnProperty(value = "metadata.api.enabled", havingValue = "true", matchIfMissing = true)

@@ -17,10 +17,15 @@ import com.myRetail.retail.api.response.ProductResponse;
 import com.myRetail.retail.service.biz.api.ProductsManager;
 import javax.validation.Valid;
 
+/**
+ * @author mythili
+ *
+ */
+
 @RestController
 @RequestMapping("/myRetail/products")
 @ConditionalOnProperty(value = "metadata.api.enabled", havingValue = "true", matchIfMissing = true)
-public class ProductsController {
+public class ProductsController implements ProductsResource {
 
 	@Autowired
 	private ProductsManager productManager;
